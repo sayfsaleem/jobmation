@@ -1,0 +1,454 @@
+{% extends "Header.html" %}
+{% load static %}
+{% block root %}
+        <section class="bg-cover primary-bg-dark" style="background:url({%static 'assets/img/bg2.png'%})no-repeat;">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<h2 class="ipt-title text-light">Create An Account</h2>
+<span class="text-light opacity-75">Create an account or signin</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================ Page Title End ================================== -->
+<!-- ============================ Login Form Start ================================== -->
+<section class="gray-simple">
+<div class="container">
+<!-- row Start -->
+<div class="row justify-content-center">
+<!-- Single blog Grid -->
+<div class="col-xl-6 col-lg-8 col-md-12">
+<div class="vesh-detail-bloc">
+<div class="vesh-detail-bloc-body pt-3">
+<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+<li class="nav-item">
+<button aria-controls="signin" aria-selected="true" class="nav-link active" data-bs-target="#signin" data-bs-toggle="pill" id="signin-tab" role="tab" type="button">Login Account</button>
+</li>
+<li class="nav-item">
+<button aria-controls="register" aria-selected="false" class="nav-link" data-bs-target="#register" data-bs-toggle="pill" id="register-tab" role="tab" tabindex="-1" type="button">Create Account</button>
+</li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+<div aria-labelledby="signin-tab" class="tab-pane fade show active" id="signin" role="tabpanel" tabindex="0">
+<div class="row gx-3 gy-4">
+<div class="modal-login-form">
+<form>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="name@example.com" type="email"/>
+<label>User Name</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Password" type="password"/>
+<label>Password</label>
+</div>
+<div class="form-group">
+<button class="btn btn-primary full-width font--bold btn-lg" type="submit">Log In</button>
+</div>
+<div class="modal-flex-item mb-3">
+<div class="modal-flex-first">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="savepassword1" type="checkbox" value="option1"/>
+<label class="form-check-label" for="savepassword1">Save Password</label>
+</div>
+</div>
+<div class="modal-flex-last">
+<a href="JavaScript:Void(0);">Forget Password?</a>
+</div>
+</div>
+</form>
+</div>
+<div class="social-login">
+<ul>
+<li><a class="btn connect-fb" href="JavaScript:Void(0);"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+<li><a class="btn connect-google" href="JavaScript:Void(0);"><i class="fa-brands fa-google"></i>Google+</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div aria-labelledby="register-tab" class="tab-pane fade" id="register" role="tabpanel" tabindex="0">
+<div class="row gx-3 gy-4">
+<div class="modal-login-form">
+<form>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Your Name" type="email"/>
+<label>Full Name</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="name@example.com" type="email"/>
+<label>Email</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="example123" type="email"/>
+<label>User ID</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Password" type="password"/>
+<label>Password</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Password" type="password"/>
+<label>Confirm Password</label>
+</div>
+<div class="form-group">
+<button class="btn btn-primary full-width font--bold btn-lg" type="submit">Create An Account</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /row -->
+</div>
+</section>
+<!-- ============================ Login Form End ================================== -->
+<!-- ============================ Call To Action ================================== -->
+<section class="bg-cover primary-bg-dark" style="background:url({%static 'assets/img/footer-bg-dark.png'%})no-repeat;">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-10 col-md-12 col-sm-12">
+<div class="call-action-wrap">
+<div class="sec-heading center">
+<h2 class="lh-base mb-3 text-light">Find The Perfect Job<br/>on Job Mation That is Superb For You</h2>
+<p class="fs-6 text-light">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+</div>
+<div class="call-action-buttons mt-3">
+<a class="btn btn-lg btn-dark fw-medium px-xl-5 px-lg-4 me-2" href="JavaScript:Void(0);">Upload resume</a>
+<a class="btn btn-lg btn-whites fw-medium px-xl-5 px-lg-4 text-primary" href="JavaScript:Void(0);">Join Our Team</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" aria-labelledby="loginmodal" class="modal fade" id="login" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+<div class="modal-content" id="loginmodal">
+<span aria-hidden="true" class="mod-close" data-bs-dismiss="modal"><i class="fas fa-close"></i></span>
+<div class="modal-header">
+<div class="mdl-thumb"><img alt="" class="img-fluid" src="{% static 'assets/img/ico.png' %}" width="70"/></div>
+<div class="mdl-title">
+<h4 class="modal-header-title">Hello, Again</h4>
+</div>
+</div>
+<div class="modal-body">
+<div class="modal-login-form">
+<form>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="name@example.com" type="email"/>
+<label>User Name</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Password" type="password"/>
+<label>Password</label>
+</div>
+<div class="form-group">
+<button class="btn btn-primary full-width font--bold btn-lg" type="submit">Log In</button>
+</div>
+<div class="modal-flex-item mb-3">
+<div class="modal-flex-first">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="savepassword" type="checkbox" value="option1"/>
+<label class="form-check-label" for="savepassword">Save Password</label>
+</div>
+</div>
+<div class="modal-flex-last">
+<a href="JavaScript:Void(0);">Forget Password?</a>
+</div>
+</div>
+</form>
+</div>
+<div class="social-login">
+<ul>
+<li><a class="btn connect-fb" href="JavaScript:Void(0);"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+<li><a class="btn connect-google" href="JavaScript:Void(0);"><i class="fa-brands fa-google"></i>Google+</a></li>
+</ul>
+</div>
+</div>
+<div class="modal-footer">
+<p>Don't have an account yet?<a class="text-primary font--bold ms-1" href="signup.html">Sign Up</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<!-- Filter Modal -->
+<div aria-hidden="true" aria-labelledby="filtermodal" class="modal fade" id="filter" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered filter-popup" role="document">
+<div class="modal-content" id="filtermodal">
+<span aria-hidden="true" class="mod-close" data-bs-dismiss="modal"><i class="fas fa-close"></i></span>
+<div class="modal-header">
+<h4 class="modal-header-sub-title">Start Your Filter</h4>
+</div>
+<div class="modal-body p-0">
+<div class="filter-content">
+<div class="full-tabs-group">
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Match Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="msix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Value Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Place Of Work</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="anywhere" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="anywhere">Anywhere</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="onsite" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="onsite">On Site</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="remote" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="remote">Fully Remote</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Contract</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="employee1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="employee1">Employee</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="frelancers1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="frelancers1">Freelancer</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="contractor1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="contractor1">Contractor</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship1">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Employment</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="fulltime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="fulltime">Full Time</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="parttime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="parttime">Part Time</label>
+</div>
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="freelance2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="freelance2">Freelance</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship2">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Radius In Miles</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="rg-slider">
+<input class="js-range-slider" name="my_range" type="text" value=""/>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Explore Top Categories</h5>
+</div>
+<div class="single-tabs-group-content">
+<ul class="row p-0 m-0">
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-1" name="s-1" type="checkbox"/>
+<label class="form-check-label" for="s-1">IT Computers</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-2" name="s-2" type="checkbox"/>
+<label class="form-check-label" for="s-2">Web Design</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-3" name="s-3" type="checkbox"/>
+<label class="form-check-label" for="s-3">Web development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-4" name="s-4" type="checkbox"/>
+<label class="form-check-label" for="s-4">SEO Services</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-5" name="s-5" type="checkbox"/>
+<label class="form-check-label" for="s-5">Financial Service</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-6" name="s-6" type="checkbox"/>
+<label class="form-check-label" for="s-6">Art, Design, Media</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-7" name="s-7" type="checkbox"/>
+<label class="form-check-label" for="s-7">Coach &amp; Education</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-8" name="s-8" type="checkbox"/>
+<label class="form-check-label" for="s-8">Apps Developements</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-9" name="s-9" type="checkbox"/>
+<label class="form-check-label" for="s-9">IOS Development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-10" name="s-10" type="checkbox"/>
+<label class="form-check-label" for="s-10">Android Development</label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Keywords</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="form-group">
+<input class="form-control" placeholder="Design, Java, Python, WordPress etc..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<div class="filt-buttons-updates">
+<button class="btn btn-dark" type="button">Clear Filter</button>
+<button class="btn btn-primary" type="button">Search</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<a class="top-scroll" href="#" id="back2Top" title="Back to top"><i class="ti-arrow-up"></i></a>
+{% endblock root %}

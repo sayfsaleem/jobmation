@@ -1,0 +1,2246 @@
+{% extends "Header.html" %}
+{% load static %}
+{% block root %}
+<div class="map-banner-wrap half-map">
+<div class="map-content-wrap" style="width: 100%;">
+<div class="map-content-bxo">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="_mp-inner-content elior">
+<div class="_mp-inner-first">
+<div class="search-inline">
+<input class="form-control" placeholder="Job Title, Keyword etc." type="text"/>
+<button class="btn btn-primary" type="button">Search</button>
+</div>
+</div>
+<div class="_mp_inner-last">
+<a class="filter-pop-link gray-simple rounded py-3 px-4" data-bs-target="#filter" data-bs-toggle="modal" href="JavaScript:Void(0);"><i class="fa fa-sliders-h mr-2"></i>Filter</a>
+</div>
+</div>
+<div class="types-job-matches mb-4">
+<ul class="nav nav-pills nav-fill gap-3 p-2 gray-simple rounded-2 light-nav" id="pillNav2" role="tablist">
+<li class="nav-item">
+<button aria-controls="bestmatches" aria-selected="true" class="nav-link active rounded-2" data-bs-target="#bestmatches" data-bs-toggle="pill" id="bestmatches-tab" role="tab" type="button">Best Matches</button>
+</li>
+<li class="nav-item">
+<button aria-controls="featured" aria-selected="false" class="nav-link rounded-2" data-bs-target="#featured" data-bs-toggle="pill" id="featured-tab" role="tab" type="button">Featured</button>
+</li>
+<li class="nav-item">
+<button aria-controls="mostrecent" aria-selected="false" class="nav-link rounded-2" data-bs-target="#mostrecent" data-bs-toggle="pill" id="mostrecent-tab" role="tab" type="button">Most Recent</button>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--- All List -->
+<div class="map-content-list">
+<div class="tab-content" id="pills-tabContent">
+<!-- Best Matches -->
+<div aria-labelledby="bestmatches-tab" class="tab-pane fade show active" id="bestmatches" role="tabpanel" tabindex="0">
+<div class="row justify-content-start gx-3 gy-4">
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-1.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Tripadvisor</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-2.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Pinterest</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 min ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-3.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Front-end Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Shopify</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Liverpool, UK</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$300<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>2 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-4.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">New Shopify Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dreezoo</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>5 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-5.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. Magento Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Photoshop</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Danver, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$310<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-6.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Code Ignetor Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Firefox</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$450<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>02 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-7.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. UI/UX Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Airbnb</span>.<span><i class="fa-solid fa-location-dot me-1"></i>California</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-8.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. Laravel Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Snapchat</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$320<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-9.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dribbble</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">WordPress Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Skype</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$350<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>08 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-11.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Exp. Project manager</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Giigle Inc</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, USA</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-12.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. PHP Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Instagram</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Denver, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$250<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>15 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+</div>
+<!-- Pagination -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a aria-label="Previous" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">«</span>
+</a>
+</li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">1</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">2</a></li>
+<li aria-current="page" class="page-item active"><a class="page-link" href="JavaScript:Void(0);">3</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">4</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">5</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">6</a></li>
+<li class="page-item">
+<a aria-label="Next" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">»</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<!-- Featured Matches -->
+<div aria-labelledby="featured-tab" class="tab-pane fade" id="featured" role="tabpanel" tabindex="0">
+<div class="row justify-content-start gx-3 gy-4">
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-7.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. UI/UX Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Airbnb</span>.<span><i class="fa-solid fa-location-dot me-1"></i>California</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-8.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. Laravel Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Snapchat</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$320<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-9.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dribbble</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">WordPress Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Skype</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$350<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>08 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-11.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Exp. Project manager</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Giigle Inc</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, USA</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-12.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. PHP Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Instagram</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Denver, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$250<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>15 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-1.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Tripadvisor</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-2.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Pinterest</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 min ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-3.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Front-end Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Shopify</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Liverpool, UK</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$300<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>2 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-4.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">New Shopify Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dreezoo</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>5 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-5.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. Magento Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Photoshop</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Danver, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$310<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-6.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Code Ignetor Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Firefox</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$450<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>02 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+</div>
+<!-- Pagination -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a aria-label="Previous" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">«</span>
+</a>
+</li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">1</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">2</a></li>
+<li aria-current="page" class="page-item active"><a class="page-link" href="JavaScript:Void(0);">3</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">4</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">5</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">6</a></li>
+<li class="page-item">
+<a aria-label="Next" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">»</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<!-- Most Recent Matches -->
+<div aria-labelledby="mostrecent-tab" class="tab-pane fade" id="mostrecent" role="tabpanel" tabindex="0">
+<div class="row justify-content-start gx-3 gy-4">
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-5.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. Magento Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Photoshop</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Danver, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$310<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-6.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Code Ignetor Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Firefox</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$450<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>02 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-7.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Sr. UI/UX Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Airbnb</span>.<span><i class="fa-solid fa-location-dot me-1"></i>California</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-8.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. Laravel Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Snapchat</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$320<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>05 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-9.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dribbble</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$400<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-1.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Tripadvisor</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>07 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-2.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Product Designer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Pinterest</span>.<span><i class="fa-solid fa-location-dot me-1"></i>New York</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$370<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 min ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-3.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Front-end Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Shopify</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Liverpool, UK</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$300<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>2 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-4.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">New Shopify Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Dreezoo</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>5 Hours ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">WordPress Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Skype</span>.<span><i class="fa-solid fa-location-dot me-1"></i>London</span>.<span class="text-danger">Internship</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$350<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>08 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-11.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Exp. Project manager</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Giigle Inc</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Canada, USA</span>.<span class="text-success">Full Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$290<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>10 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+<!-- Single Job -->
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+<div class="zob-list-bloxks border">
+<div class="zoblist-uppr-module">
+<div class="zoblist-uppr-module-left">
+<div class="zoblist-uppr-module-thumb">
+<div class="jbs-list-emp-thumb jbs-verified">
+<a href="/job-detail/">
+<figure><img alt="" class="img-fluid" src="{% static 'assets/img/l-12.png' %}"/></figure>
+</a>
+</div>
+</div>
+<div class="zoblist-uppr-module-caption">
+<div class="jbs-job-title-wrap">
+<h4><a class="jbs-job-title" href="/job-detail/">Jr. PHP Developer</a></h4>
+</div>
+<div class="single-mrch-lists mb-2">
+<span>Instagram</span>.<span><i class="fa-solid fa-location-dot me-1"></i>Denver, US</span>.<span class="text-warning">Part Time</span>
+</div>
+<div class="jbs-grid-job-edrs-group">
+<span>HTML</span>
+<span>CSS3</span>
+<span>Bootstrap</span>
+<span>Redux</span>
+</div>
+</div>
+</div>
+<div class="zoblist-uppr-module-right">
+<div class="jbs-grid-jbs-saved"><a class="bkrs" href="JavaScript:Void(0);"><i class="fa-regular fa-bookmark"></i></a></div>
+</div>
+</div>
+<div class="zoblist-bott-module">
+<div class="zoblist-leio-field">
+<div class="zoblist-package-wraps">
+<div class="jbs-grid-package-title">
+<h5>$250<span>\Year</span></h5>
+</div>
+</div>
+</div>
+<div class="zoblist-leio-button">
+<div class="zoblist-leio-button-left me-2">
+<div class="jbs-grid-posted"><span>15 Days ago</span></div>
+</div>
+<div class="zoblist-leio-button-right">
+<a class="btn btn-sm btn-primary px-3" href="JavaScript:Void(0);">Quick Apply</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Single Job -->
+</div>
+<!-- Pagination -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a aria-label="Previous" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">«</span>
+</a>
+</li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">1</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">2</a></li>
+<li aria-current="page" class="page-item active"><a class="page-link" href="JavaScript:Void(0);">3</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">4</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">5</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">6</a></li>
+<li class="page-item">
+<a aria-label="Next" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">»</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<!-- ============================ Hero Banner End ================================== -->
+<!-- Filter Modal -->
+<div aria-hidden="true" aria-labelledby="filtermodal" class="modal fade" id="filter" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered filter-popup" role="document">
+<div class="modal-content" id="filtermodal">
+<span aria-hidden="true" class="mod-close" data-bs-dismiss="modal"><i class="fas fa-close"></i></span>
+<div class="modal-header">
+<h4 class="modal-header-sub-title">Start Your Filter</h4>
+</div>
+<div class="modal-body p-0">
+<div class="filter-content">
+<div class="full-tabs-group">
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Match Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="msix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Value Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Place Of Work</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="anywhere" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="anywhere">Anywhere</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="onsite" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="onsite">On Site</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="remote" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="remote">Fully Remote</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Contract</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="employee1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="employee1">Employee</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="frelancers1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="frelancers1">Freelancer</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="contractor1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="contractor1">Contractor</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship1">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Employment</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="fulltime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="fulltime">Full Time</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="parttime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="parttime">Part Time</label>
+</div>
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="freelance2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="freelance2">Freelance</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship2">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Radius In Miles</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="rg-slider">
+<input class="js-range-slider" name="my_range" type="text" value=""/>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Explore Top Categories</h5>
+</div>
+<div class="single-tabs-group-content">
+<ul class="row p-0 m-0">
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-1" name="s-1" type="checkbox"/>
+<label class="form-check-label" for="s-1">IT Computers</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-2" name="s-2" type="checkbox"/>
+<label class="form-check-label" for="s-2">Web Design</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-3" name="s-3" type="checkbox"/>
+<label class="form-check-label" for="s-3">Web development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-4" name="s-4" type="checkbox"/>
+<label class="form-check-label" for="s-4">SEO Services</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-5" name="s-5" type="checkbox"/>
+<label class="form-check-label" for="s-5">Financial Service</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-6" name="s-6" type="checkbox"/>
+<label class="form-check-label" for="s-6">Art, Design, Media</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-7" name="s-7" type="checkbox"/>
+<label class="form-check-label" for="s-7">Coach &amp; Education</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-8" name="s-8" type="checkbox"/>
+<label class="form-check-label" for="s-8">Apps Developements</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-9" name="s-9" type="checkbox"/>
+<label class="form-check-label" for="s-9">IOS Development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-10" name="s-10" type="checkbox"/>
+<label class="form-check-label" for="s-10">Android Development</label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Keywords</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="form-group">
+<input class="form-control" placeholder="Design, Java, Python, WordPress etc..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<div class="filt-buttons-updates">
+<button class="btn btn-dark" type="button">Clear Filter</button>
+<button class="btn btn-primary" type="button">Search</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<a class="top-scroll" href="#" id="back2Top" title="Back to top"><i class="ti-arrow-up"></i></a>
+{% endblock root %}

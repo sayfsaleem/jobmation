@@ -1,0 +1,1224 @@
+{% extends "Header.html" %}
+{% load static %}
+{% block root %}
+<div class="page-title primary-bg-dark" style="background:url(assets/img/bg2.png) no-repeat;">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<h2 class="ipt-title">Grid Style Jobs 01</h2>
+<div class="breadcrumbs light">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="JavaScript:Void(0);">Home</a></li>
+<li class="breadcrumb-item"><a href="JavaScript:Void(0);">Candidate</a></li>
+<li aria-current="page" class="breadcrumb-item active">Job Grid 01</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================ Page Title End ================================== -->
+<!-- ============================ All List Wrap ================================== -->
+<section class="gray-simple">
+<div class="container">
+<div class="row">
+<!-- Search Sidebar -->
+<div class="col-lg-4 col-md-12 col-sm-12">
+<div class="bg-white rounded mb-3">
+<div class="sidebar_header d-flex align-items-center justify-content-between px-4 py-3 br-bottom">
+<h4 class="fs-bold fs-5 mb-0">Search Filter</h4>
+<div class="ssh-header">
+<a class="clear_all ft-medium text-muted" href="javascript:void(0);">Clear All</a>
+<a aria-expanded="false" class="collapsed _filter-ico ml-2" data-bs-toggle="collapse" href="#search_open" role="button"><i class="fa-solid fa-filter"></i></a>
+</div>
+</div>
+<!-- Find New Property -->
+<div class="sidebar-widgets collapse miz_show" data-bs-parent="#search_open" id="search_open">
+<div class="search-inner">
+<div class="filter-search-box px-4 pt-3">
+<div class="form-group">
+<input class="form-control" placeholder="Search by keywords..." type="text"/>
+</div>
+<div class="form-group">
+<input class="form-control" placeholder="Location, Zip.." type="text"/>
+</div>
+</div>
+<div class="filter_wraps">
+<!-- Job categories Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="true" class="ft-medium fs-md" data-bs-toggle="collapse" href="#categories" role="button">Job Categories</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse show" data-bs-parent="#categories" id="categories">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input checked="" class="form-check-input" id="a1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="a1">IT Computers (62)</label>
+</li>
+<li>
+<input class="form-check-input" id="aa1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="aa1">Web Design (31)</label>
+</li>
+<li>
+<input class="form-check-input" id="aa2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="aa2">Web development (20)</label>
+</li>
+<li>
+<input class="form-check-input" id="aa3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="aa3">SEO Services (43)</label>
+</li>
+<li>
+<input class="form-check-input" id="a2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="a2">Financial Service (16)</label>
+</li>
+<li>
+<input class="form-check-input" id="a3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="a3">Art, Design, Media (22)</label>
+</li>
+<li>
+<input class="form-check-input" id="a4" name="Mother" type="checkbox"/>
+<label class="form-check-label" for="a4">Coach &amp; Education (21)</label>
+</li>
+<li>
+<input class="form-check-input" id="a5" name="Outdoor" type="checkbox"/>
+<label class="form-check-label" for="a5">Apps Developements (17)</label>
+</li>
+<li>
+<input class="form-check-input" id="ab1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="ab1">IOS Development (12)</label>
+</li>
+<li>
+<input class="form-check-input" id="ab2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="ab2">Android Development (04)</label>
+</li>
+<li>
+<input class="form-check-input" id="a6" name="Pet" type="checkbox"/>
+<label class="form-check-label" for="a6">Writing &amp; Translation (04)</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Job Locations Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#locations" role="button">Job Locations</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse" data-bs-parent="#locations" id="locations">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input checked="" class="form-check-input" id="b1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="b1">Australia (21)</label>
+</li>
+<li>
+<input class="form-check-input" id="b2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="b2">New Zeland (12)</label>
+</li>
+<li>
+<input class="form-check-input" id="b3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="b3">United Kingdom (21)</label>
+</li>
+<li>
+<input class="form-check-input" id="ac1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="ac1">London (06)</label>
+</li>
+<li>
+<input class="form-check-input" id="ac2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="ac2">Manchester (07)</label>
+</li>
+<li>
+<input class="form-check-input" id="ac3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="ac3">Birmingham (08)</label>
+</li>
+<li>
+<input class="form-check-input" id="b4" name="Mother" type="checkbox"/>
+<label class="form-check-label" for="b4">United State (04)</label>
+</li>
+<li>
+<input class="form-check-input" id="ad1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="ad1">New York (32)</label>
+</li>
+<li>
+<input class="form-check-input" id="ad2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="ad2">Washington (42)</label>
+</li>
+<li>
+<input class="form-check-input" id="ad3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="ad3">Los Angeles (22)</label>
+</li>
+<li>
+<input class="form-check-input" id="b5" name="Outdoor" type="checkbox"/>
+<label class="form-check-label" for="b5">India (15)</label>
+</li>
+<li>
+<input class="form-check-input" id="b6" name="Pet" type="checkbox"/>
+<label class="form-check-label" for="b6">Singapore (09)</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Job Skills Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#skills" role="button">Skills</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse" data-bs-parent="#skills" id="skills">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input checked="" class="form-check-input" id="c1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="c1">Administrative (15)</label>
+</li>
+<li>
+<input class="form-check-input" id="c2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="c2">iPhone &amp; Android (33)</label>
+</li>
+<li>
+<input class="form-check-input" id="c3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="c3">Java &amp; AJAX (32)</label>
+</li>
+<li>
+<input class="form-check-input" id="c4" name="Mother" type="checkbox"/>
+<label class="form-check-label" for="c4">Account Manager (21)</label>
+</li>
+<li>
+<input class="form-check-input" id="c5" name="Outdoor" type="checkbox"/>
+<label class="form-check-label" for="c5">WordPress (32)</label>
+</li>
+<li>
+<input class="form-check-input" id="c6" name="Pet" type="checkbox"/>
+<label class="form-check-label" for="c6">Magento (42)</label>
+</li>
+<li>
+<input class="form-check-input" id="c7" name="Beauty" type="checkbox"/>
+<label class="form-check-label" for="c7">Shopify (12)</label>
+</li>
+<li>
+<input class="form-check-input" id="c8" name="Bike" type="checkbox"/>
+<label class="form-check-label" for="c8">PHP Script (08)</label>
+</li>
+<li>
+<input class="form-check-input" id="c9" name="Phone" type="checkbox"/>
+<label class="form-check-label" for="c9">Drupal (32)</label>
+</li>
+<li>
+<input class="form-check-input" id="c11" name="Private" type="checkbox"/>
+<label class="form-check-label" for="c11">Joomla (50)</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Expected Salary Search -->
+<div class="single_search_boxed px-4 pt-0">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#radiusmiles" role="button">Radius in Miles</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse show" data-bs-parent="#radiusmiles" id="radiusmiles">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="rg-slider">
+<input class="js-range-slider" name="my_range" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#experience" role="button">Experience</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse" data-bs-parent="#experience" id="experience">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input checked="" class="form-check-input" id="d1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="d1">Beginner (54)</label>
+</li>
+<li>
+<input class="form-check-input" id="d2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="d2">1+ Year (32)</label>
+</li>
+<li>
+<input class="form-check-input" id="d3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="d3">2 Year (09)</label>
+</li>
+<li>
+<input class="form-check-input" id="d4" name="Mother" type="checkbox"/>
+<label class="form-check-label" for="d4">3+ Year (16)</label>
+</li>
+<li>
+<input class="form-check-input" id="d5" name="Outdoor" type="checkbox"/>
+<label class="form-check-label" for="d5">4+ Year (17)</label>
+</li>
+<li>
+<input class="form-check-input" id="d6" name="Pet" type="checkbox"/>
+<label class="form-check-label" for="d6">5+ Year (22)</label>
+</li>
+<li>
+<input class="form-check-input" id="d7" name="Beauty" type="checkbox"/>
+<label class="form-check-label" for="d7">10+ Year (32)</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Job types Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#jbtypes" role="button">Job Type</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse" data-bs-parent="#jbtypes" id="jbtypes">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input class="form-check-input" id="e2" name="jtype" type="radio"/>
+<label class="form-check-label" for="e2">Full time</label>
+</li>
+<li>
+<input class="form-check-input" id="e3" name="jtype" type="radio"/>
+<label class="form-check-label" for="e3">Part Time</label>
+</li>
+<li>
+<input checked="" class="form-check-input" id="e4" name="jtype" type="radio"/>
+<label class="form-check-label" for="e4">Contract Base</label>
+</li>
+<li>
+<input class="form-check-input" id="e5" name="jtype" type="radio"/>
+<label class="form-check-label" for="e5">Internship</label>
+</li>
+<li>
+<input class="form-check-input" id="e6" name="jtype" type="radio"/>
+<label class="form-check-label" for="e6">Regular</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Job Level Search -->
+<div class="single_search_boxed px-4 pt-0 br-bottom">
+<div class="widget-boxed-header">
+<h4>
+<a aria-expanded="false" class="ft-medium fs-md collapsed" data-bs-toggle="collapse" href="#jblevel" role="button">Job Level</a>
+</h4>
+</div>
+<div class="widget-boxed-body collapse" data-bs-parent="#jblevel" id="jblevel">
+<div class="side-list no-border">
+<!-- Single Filter Card -->
+<div class="single_filter_card">
+<div class="card-body p-0">
+<div class="inner_widget_link">
+<ul class="no-ul-list filter-list">
+<li>
+<input checked="" class="form-check-input" id="f1" name="ADA" type="checkbox"/>
+<label class="form-check-label" for="f1">Team Leader</label>
+</li>
+<li>
+<input class="form-check-input" id="f2" name="Parking" type="checkbox"/>
+<label class="form-check-label" for="f2">Manager</label>
+</li>
+<li>
+<input class="form-check-input" id="f3" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="f3">Junior</label>
+</li>
+<li>
+<input class="form-check-input" id="f4" name="Coffee" type="checkbox"/>
+<label class="form-check-label" for="f4">Senior</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group filter_button pt-3 pb-3 px-4">
+<button class="btn btn-primary full-width" type="submit">Search job</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Alert Box -->
+<div class="alert-jbemail-box bg-cover" overlay="0" style="background:#016551 url(assets/img/alert-bg.png)no-repeat;">
+<div class="alert-bxr-wrap">
+<div class="alert-bxr-captions mb-3">
+<h3 class="text-light">Get The Latest Jobs Right Into Your Inbox!</h3>
+<p class="text-light opacity-75">We just want your email address!</p>
+</div>
+<div class="alert-bxr-forms">
+<form>
+<div class="newsltr-form">
+<input class="form-control" placeholder="Enter Your email" type="text"/>
+<button class="btn btn-subscribe bg-dark" type="button">Subscribe</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar End -->
+<div class="col-lg-8 col-md-12 col-sm-12">
+<div class="row justify-content-center mb-4">
+<div class="col-lg-12 col-md-12">
+<div class="item-shorting-box">
+<div class="item-shorting clearfix">
+<div class="left-column">
+<h4 class="m-sm-0 mb-2">Showing 1 - 10 of 20 Results</h4>
+</div>
+</div>
+<div class="item-shorting-box-right">
+<div class="shorting-by me-2 small">
+<select>
+<option value="0">Short by (Default)</option>
+<option value="1">Short by (Featured)</option>
+<option value="2">Short by (Urgent)</option>
+<option value="3">Short by (Post Date)</option>
+</select>
+</div>
+<div class="shorting-by small">
+<select>
+<option value="0">10 Per Page</option>
+<option value="1">20 Per Page</option>
+<option value="2">50 Per Page</option>
+<option value="3">10 Per Page</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Start All List -->
+<div class="row justify-content-center gx-xl-3 gx-3 gy-4">
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="enternship">Enternship</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-1.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Jr. PHP Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$5K - $8K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">6 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="freelanc">Freelancer</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-2.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Exp. Project manager</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$6K - $10K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">4 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="part-time">Part Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-3.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. WordPress Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$5K - $8K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">3 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+</div>
+<div class="brows-job-type"><span class="full-time">Full Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-4.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Jr. Laravel Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$4.2K - $6K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">2 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="freelanc">Freelancer</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-5.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. UI/UX Designer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$4K - $5.5K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">5 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="part-time">Part Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-6.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Java &amp; Python Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$2K - $4K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">4 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="full-time">FullTime</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-7.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. Code Ignetor Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$5K - $6K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">3 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+</div>
+<div class="brows-job-type"><span class="enternship">Enternship</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-8.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. Magento Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$3.2K - $5K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">5 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="part-time">Part Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Data Project Manager</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$10K - $15K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">1 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+</div>
+<div class="brows-job-type"><span class="full-time">Full Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">HTML5 To WordPress Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$8K - $10K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">4 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="part-time">Part Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-10.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Jr. Content Writer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$4K - $5.5K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">2 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="full-time">Full Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-12.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. Figma Designer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$6K - $8K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">3 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="enternship">Enternship</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-1.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Jr. PHP Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$5K - $8K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">6 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="freelanc">Freelancer</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-2.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Exp. Project manager</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$6K - $10K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">4 Open</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Item -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+<div class="job-instructor-layout border">
+<div class="left-tags-capt">
+<span class="featured-text">Featured</span>
+<span class="urgent">Urgent</span>
+</div>
+<div class="brows-job-type"><span class="part-time">Part Time</span></div>
+<div class="job-instructor-thumb">
+<a href="/job-detail/"><img alt="" class="img-fluid" src="{% static 'assets/img/l-3.png' %}"/></a>
+</div>
+<div class="job-instructor-content">
+<h4 class="instructor-title"><a href="/job-detail/">Sr. WordPress Developer</a></h4>
+<div class="instructor-skills">
+                                            CSS3, HTML5, Javascript, Bootstrap, Jquery
+                                        </div>
+</div>
+<div class="job-instructor-footer">
+<div class="instructor-students">
+<h5 class="instructor-scount">$5K - $8K</h5>
+</div>
+<div class="instructor-corses">
+<span class="c-counting">3 Open</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a aria-label="Previous" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">«</span>
+</a>
+</li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">1</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">2</a></li>
+<li class="page-item active"><a class="page-link" href="JavaScript:Void(0);">3</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">4</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">5</a></li>
+<li class="page-item"><a class="page-link" href="JavaScript:Void(0);">6</a></li>
+<li class="page-item">
+<a aria-label="Next" class="page-link" href="JavaScript:Void(0);">
+<span aria-hidden="true">»</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================ All List Wrap ================================== -->
+<!-- ============================ Call To Action ================================== -->
+<section class="bg-cover primary-bg-dark" style="background:url(assets/img/footer-bg-dark.png)no-repeat;">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-10 col-md-12 col-sm-12">
+<div class="call-action-wrap">
+<div class="sec-heading center">
+<h2 class="lh-base mb-3 text-light">Find The Perfect Job<br/>on Job Mation That is Superb For You</h2>
+<p class="fs-6 text-light">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+</div>
+<div class="call-action-buttons mt-3">
+<a class="btn btn-lg btn-dark fw-medium px-xl-5 px-lg-4 me-2" href="JavaScript:Void(0);">Upload resume</a>
+<a class="btn btn-lg btn-whites fw-medium px-xl-5 px-lg-4 text-primary" href="JavaScript:Void(0);">Join Our Team</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" aria-labelledby="loginmodal" class="modal fade" id="login" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+<div class="modal-content" id="loginmodal">
+<span aria-hidden="true" class="mod-close" data-bs-dismiss="modal"><i class="fas fa-close"></i></span>
+<div class="modal-header">
+<div class="mdl-thumb"><img alt="" class="img-fluid" src="{% static 'assets/img/ico.png' %}" width="70"/></div>
+<div class="mdl-title">
+<h4 class="modal-header-title">Hello, Again</h4>
+</div>
+</div>
+<div class="modal-body">
+<div class="modal-login-form">
+<form>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="name@example.com" type="email"/>
+<label>User Name</label>
+</div>
+<div class="form-floating mb-4">
+<input class="form-control" placeholder="Password" type="password"/>
+<label>Password</label>
+</div>
+<div class="form-group">
+<button class="btn btn-primary full-width font--bold btn-lg" type="submit">Log In</button>
+</div>
+<div class="modal-flex-item mb-3">
+<div class="modal-flex-first">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="savepassword" type="checkbox" value="option1"/>
+<label class="form-check-label" for="savepassword">Save Password</label>
+</div>
+</div>
+<div class="modal-flex-last">
+<a href="JavaScript:Void(0);">Forget Password?</a>
+</div>
+</div>
+</form>
+</div>
+<div class="social-login">
+<ul>
+<li><a class="btn connect-fb" href="JavaScript:Void(0);"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+<li><a class="btn connect-google" href="JavaScript:Void(0);"><i class="fa-brands fa-google"></i>Google+</a></li>
+</ul>
+</div>
+</div>
+<div class="modal-footer">
+<p>Don't have an account yet?<a class="text-primary font--bold ms-1" href="signup.html">Sign Up</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<!-- Filter Modal -->
+<div aria-hidden="true" aria-labelledby="filtermodal" class="modal fade" id="filter" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered filter-popup" role="document">
+<div class="modal-content" id="filtermodal">
+<span aria-hidden="true" class="mod-close" data-bs-dismiss="modal"><i class="fas fa-close"></i></span>
+<div class="modal-header">
+<h4 class="modal-header-sub-title">Start Your Filter</h4>
+</div>
+<div class="modal-body p-0">
+<div class="filter-content">
+<div class="full-tabs-group">
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Match Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="msix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="msevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="msevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="meightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="meightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="mten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="mten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Job Value Score</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsix" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsix">6.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsixfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsixfive">6.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vseven" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vseven">7.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vsevenfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vsevenfive">7.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veight" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veight">8.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="veightfive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="veightfive">8.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vnine" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vnine">9.0</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vninefive" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vninefive">9.5</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="vten" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="vten">10</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Place Of Work</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="anywhere" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="anywhere">Anywhere</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="onsite" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="onsite">On Site</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="remote" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="remote">Fully Remote</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Contract</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="employee1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="employee1">Employee</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="frelancers1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="frelancers1">Freelancer</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="contractor1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="contractor1">Contractor</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship1" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship1">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Type Of Employment</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="d-flex flex-wrap">
+<div class="sing-btn-groups">
+<input class="btn-check" id="fulltime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="fulltime">Full Time</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="parttime" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="parttime">Part Time</label>
+</div>
+<div class="sing-btn-groups">
+<input checked="" class="btn-check" id="freelance2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="freelance2">Freelance</label>
+</div>
+<div class="sing-btn-groups">
+<input class="btn-check" id="internship2" type="checkbox"/>
+<label class="btn btn-md btn-outline-primary font--bold rounded-5" for="internship2">Internship</label>
+</div>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Radius In Miles</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="rg-slider">
+<input class="js-range-slider" name="my_range" type="text" value=""/>
+</div>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Explore Top Categories</h5>
+</div>
+<div class="single-tabs-group-content">
+<ul class="row p-0 m-0">
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-1" name="s-1" type="checkbox"/>
+<label class="form-check-label" for="s-1">IT Computers</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-2" name="s-2" type="checkbox"/>
+<label class="form-check-label" for="s-2">Web Design</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-3" name="s-3" type="checkbox"/>
+<label class="form-check-label" for="s-3">Web development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-4" name="s-4" type="checkbox"/>
+<label class="form-check-label" for="s-4">SEO Services</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-5" name="s-5" type="checkbox"/>
+<label class="form-check-label" for="s-5">Financial Service</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-6" name="s-6" type="checkbox"/>
+<label class="form-check-label" for="s-6">Art, Design, Media</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-7" name="s-7" type="checkbox"/>
+<label class="form-check-label" for="s-7">Coach &amp; Education</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-8" name="s-8" type="checkbox"/>
+<label class="form-check-label" for="s-8">Apps Developements</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-9" name="s-9" type="checkbox"/>
+<label class="form-check-label" for="s-9">IOS Development</label>
+</div>
+</li>
+<li class="col-lg-6 col-md-6 p-0">
+<div class="form-check form-check-inline">
+<input class="form-check-input" id="s-10" name="s-10" type="checkbox"/>
+<label class="form-check-label" for="s-10">Android Development</label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="single-tabs-group">
+<div class="single-tabs-group-header">
+<h5>Keywords</h5>
+</div>
+<div class="single-tabs-group-content">
+<div class="form-group">
+<input class="form-control" placeholder="Design, Java, Python, WordPress etc..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<div class="filt-buttons-updates">
+<button class="btn btn-dark" type="button">Clear Filter</button>
+<button class="btn btn-primary" type="button">Search</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Modal -->
+<a class="top-scroll" href="#" id="back2Top" title="Back to top"><i class="ti-arrow-up"></i></a>
+
+
+{% endblock root%}
